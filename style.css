@@ -503,6 +503,11 @@ footer {
     aspect-ratio: 267 / 591;
 }
 
+.facebook-reel-embed--portrait iframe {
+    max-width: 267px;
+    aspect-ratio: 267 / 476;
+}
+
 .video-card__body {
     padding: 1.2rem 1.25rem 1.35rem;
 }
@@ -523,15 +528,25 @@ footer {
     margin-bottom: 2rem;
 }
 
+.facebook-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    align-items: stretch;
+    margin-top: 2rem;
+}
+
 .facebook-post-card {
     width: 100%;
     min-width: 0;
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 252, 248, 0.94));
     border: 1px solid var(--card-border);
     border-radius: var(--radius-lg);
     box-shadow: 0 18px 42px rgba(26, 16, 35, 0.08);
-    padding: 1.1rem;
+    padding: 1rem;
 }
 
 .facebook-post-embed {
@@ -542,6 +557,8 @@ footer {
     max-width: 100%;
     min-width: 0;
     margin-inline: auto;
+    padding: 0.4rem 0.25rem 0.5rem;
+    flex: 1;
 }
 
 .facebook-post-embed iframe {
@@ -550,10 +567,39 @@ footer {
     max-width: 500px;
     min-width: 0;
     height: auto;
-    aspect-ratio: 500 / 570;
     margin-inline: auto;
     border: 0;
     background: transparent;
+}
+
+.facebook-post-embed--tall iframe {
+    aspect-ratio: 500 / 719;
+}
+
+.facebook-post-embed--short iframe {
+    aspect-ratio: auto;
+}
+
+.facebook-post-embed--medium iframe {
+    aspect-ratio: 500 / 653;
+}
+
+.facebook-post-embed--latest iframe {
+    aspect-ratio: 500 / 593;
+}
+
+.facebook-post-embed--new-one iframe {
+    aspect-ratio: 500 / 765;
+}
+
+.facebook-post-embed--new-two iframe {
+    aspect-ratio: 500 / 725;
+}
+
+@media (max-width: 900px) {
+    .facebook-posts-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .blog-lead {
@@ -567,7 +613,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.5rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 .blog-card {
@@ -575,6 +621,7 @@ footer {
     flex-direction: column;
     min-width: 0;
     width: 100%;
+    height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.78), rgba(255, 251, 245, 0.96));
     border: 1px solid var(--card-border);
     border-radius: var(--radius-xl);
@@ -586,13 +633,20 @@ footer {
 .blog-cover {
     width: 100%;
     min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    overflow: hidden;
+    border-radius: calc(var(--radius-xl) - 0.2rem);
+    background: rgba(59, 29, 65, 0.04);
 }
 
 .blog-cover img {
     display: block;
     width: 100%;
-    height: auto;
-    max-height: 360px;
+    height: 220px;
+    max-height: 220px;
     object-fit: cover;
     border-radius: calc(var(--radius-xl) - 0.2rem);
     border: 1px solid rgba(113, 71, 122, 0.12);
@@ -601,6 +655,7 @@ footer {
 
 .blog-content {
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 1rem;
     width: 100%;
@@ -638,6 +693,7 @@ footer {
     min-width: 0;
     overflow-wrap: normal;
     word-break: normal;
+    flex: 1;
 }
 
 .blog-excerpt {
@@ -713,6 +769,7 @@ footer {
     justify-content: center;
     align-self: flex-start;
     min-height: 3rem;
+    margin-top: auto;
     padding: 0.8rem 1.2rem;
     border: 0;
     border-radius: 999px;
