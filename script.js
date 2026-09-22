@@ -41,3 +41,36 @@ if ('IntersectionObserver' in window) {
 } else {
     revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
+const blogToggleButtons = document.querySelectorAll('.blog-toggle');
+blogToggleButtons.forEach((button) => {
+    const articleId = button.getAttribute('aria-controls');
+    const article = articleId ? document.getElementById(articleId) : null;
+
+    if (!article) return;
+
+    const excerpt = button.closest('.blog-content')?.querySelector('.blog-excerpt');
+    const setState = (isOpen) => {
+        const label = button.querySelector('.blog-toggle-label');
+        if (label) {
+            label.textContent = isOpen ? 'დახურვა' : 'სრულად წაიკითხე';
+        }
+
+        button.setAttribute('aria-expanded', String(isOpen));
+        article.classList.toggle('is-open', isOpen);
+        article.hidden = !isOpen;
+
+        if (excerpt) {
+            excerpt.style.display = isOpen ? 'none' : 'block';
+        }
+    };
+
+    article.hidden = true;
+    article.classList.remove('is-open');
+    setState(false);
+
+    button.addEventListener('click', () => {
+        const isOpen = button.getAttribute('aria-expanded') === 'true';
+        setState(!isOpen);
+    });
+});
