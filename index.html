@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="მზის ბიბლიოთეკარი — დინოზავრების შემეცნებითი სამყარო, სადაც აღმოაჩენთ პრეისტორიულ სამყაროს, საინტერესო ვიდეოებსა და საგანმანათლებლო თავგადასავლებს.">
+    <meta name="theme-color" content="#07110D">
+    <title>მზის ბიბლიოთეკარი | დინოზავრების შემეცნებითი სამყარო</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header" id="home">
+        <div class="site-header__inner">
+            <a class="brand" href="#home" aria-label="მზის ბიბლიოთეკარი მთავარი">
+                <span class="brand-mark">☼</span>
+                <span class="brand-copy">
+                    <strong>მზის ბიბლიოთეკარი</strong>
+                    <small>მზევინარ მჟავია-ხომერიკი</small>
+                </span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="მენიუს გახსნა">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="მთავარი ნავიგაცია">
+                <a href="#home">მთავარი</a>
+                <a href="#discover">აღმოაჩინე</a>
+                <a href="#videos">ვიდეოები</a>
+                <a href="#about">ჩვენ შესახებ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero__content reveal">
+                <p class="eyebrow">შემეცნებითი ციფრული სივრცე</p>
+                <h1 id="hero-title">იმოგზაურე დინოზავრების საოცარ სამყაროში</h1>
+                <p class="hero__lead">აღმოაჩინე პრეისტორიული სამყაროს საიდუმლოებები, გაიცანი დინოზავრები და ისწავლე მათი ისტორია საინტერესო ვიდეოებისა და შემეცნებითი თავგადასავლების საშუალებით.</p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#discover">დაიწყე აღმოჩენა</a>
+                    <a class="button button--secondary" href="#videos">ნახე ვიდეოები</a>
+                </div>
+            </div>
+
+            <div class="hero__visual reveal" aria-label="დინოზავრების მუზეუმის ილუსტრაცია">
+                <svg class="hero-art" viewBox="0 0 620 520" role="img" aria-labelledby="hero-art-title hero-art-desc">
+                    <title id="hero-art-title">დინოზავრისა და ბუნებრივი მუზეუმის ილუსტრაცია</title>
+                    <desc id="hero-art-desc">მრავალფეროვანი, ციფრული, ბუნებრივი მუზეუმის სურათი, რომელშიც დინოზავრები და მცენარეები ერთიანდება.</desc>
+                    <defs>
+                        <linearGradient id="skyGlow" x1="0%" x2="100%" y1="0%" y2="100%">
+                            <stop offset="0%" stop-color="#D9A441" stop-opacity="0.9"/>
+                            <stop offset="100%" stop-color="#63B46C" stop-opacity="0.3"/>
+                        </linearGradient>
+                        <linearGradient id="groundGlow" x1="0%" x2="100%" y1="0%" y2="0%">
+                            <stop offset="0%" stop-color="#1E6B4B"/>
+                            <stop offset="100%" stop-color="#0B1712"/>
+                        </linearGradient>
+                    </defs>
+                    <circle cx="470" cy="130" r="88" fill="url(#skyGlow)" opacity="0.9"/>
+                    <path d="M0 340C88 282 124 268 190 286C255 305 284 332 356 328C480 320 516 255 620 278V520H0V340Z" fill="#0B1712" opacity="0.9"/>
+                    <path d="M0 382C106 348 148 336 214 351C291 367 336 430 432 420C513 412 555 335 620 354V520H0V382Z" fill="url(#groundGlow)"/>
+
+                    <g fill="#F5F7F3" opacity="0.94">
+                        <path d="M56 328C76 298 91 286 116 286C126 286 136 287 145 291C137 295 124 301 118 311C110 323 113 339 126 344C140 349 160 347 177 340C161 365 143 383 121 393C96 405 66 402 46 373C36 361 35 344 56 328Z"/>
+                        <path d="M134 332C149 312 165 303 183 301C199 299 211 307 224 318C212 322 198 331 191 344C180 362 181 379 194 395C175 396 152 391 136 374C125 362 121 349 134 332Z"/>
+                        <path d="M285 202C300 184 330 174 356 177C380 181 401 196 414 210C396 214 375 225 367 240C364 247 363 256 366 264C344 263 323 257 309 246C294 235 284 218 285 202Z"/>
+                    </g>
+
+                    <g transform="translate(132 150)">
+                        <ellipse cx="140" cy="180" rx="150" ry="74" fill="#63B46C" opacity="0.25"/>
+                        <g fill="#F2EAD8" stroke="#F2EAD8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 164C82 111 142 77 214 72C250 69 290 78 314 100L328 116L294 123C279 94 248 89 208 98C170 106 133 126 100 156L22 164Z"/>
+                            <path d="M110 161L67 211L120 201L129 160Z"/>
+                            <path d="M139 161L180 207L220 189L196 156Z"/>
+                            <path d="M209 163L246 216L280 196L246 155Z"/>
+                            <path d="M247 160L290 204L333 183L303 151Z"/>
+                            <circle cx="88" cy="120" r="9" fill="#07110D"/>
+                            <circle cx="110" cy="109" r="7" fill="#07110D"/>
+                            <path d="M154 216L182 252L171 287L140 287L128 241Z"/>
+                            <path d="M105 217L78 254L42 255L58 214Z"/>
+                            <path d="M112 159L150 162L152 197L109 187Z"/>
+                            <path d="M178 160L214 165L226 186L191 197Z"/>
+                            <path d="M218 161L256 164L288 190L248 203Z"/>
+                            <path d="M266 227L288 248L316 244L305 208Z"/>
+                        </g>
+                    </g>
+
+                    <g fill="#63B46C" opacity="0.85">
+                        <path d="M42 402C57 376 72 364 92 364C110 364 123 374 129 397C112 394 95 398 80 408C67 417 56 420 42 402Z"/>
+                        <path d="M470 390C491 360 515 349 545 351C566 352 581 363 591 381C571 381 554 387 538 399C521 412 509 417 470 390Z"/>
+                        <path d="M498 299C514 275 530 264 552 264C568 264 583 272 590 288C573 286 558 291 545 304C529 319 521 326 498 299Z"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <section class="discovery-section" id="discover">
+            <div class="section-heading reveal">
+                <p class="eyebrow eyebrow--dark">აღმოაჩინე</p>
+                <h2>მოგზაურობა მეცნიერების, აღმოჩენებისა და ცოცხალი ისტორიისკენ</h2>
+            </div>
+
+            <div class="discovery-grid">
+                <article class="discovery-card reveal">
+                    <div class="discovery-card__icon">🦖</div>
+                    <h3>გაიცანი დინოზავრები</h3>
+                    <p>აღმოაჩინე იდუმალი, ცოცხალი და ამაღელვებელი სამყაროს უცნაური მეფეები, რომელთა შესახებაც დღემდე ბევრი რამ არის გასარკვევი.</p>
+                </article>
+
+                <article class="discovery-card reveal">
+                    <div class="discovery-card__icon">🌿</div>
+                    <h3>იმოგზაურე წარსულში</h3>
+                    <p>მოგზაურობა პრეისტორიულ სამყაროში გიჩვენებს, თუ როგორ ცხოვრობდა ბუნება, რა იყო სიცოცხლის რიტმი და როგორ ვითარდებოდნენ უძველესი ცხოველები.</p>
+                </article>
+
+                <article class="discovery-card reveal">
+                    <div class="discovery-card__icon">📚</div>
+                    <h3>ისწავლე აღმოჩენით</h3>
+                    <p>ყოველი ვიდეო და ყოველი ახალი ინფორმაცია აძლევს გონებას შესაძლებლობას, გაიხსნას, გამოიკვლიოს და უკეთ გაიგოს ისტორია.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="video-section" id="videos">
+            <div class="section-heading reveal">
+                <p class="eyebrow eyebrow--dark">ვიდეოები</p>
+                <h2>ვიდეო თავგადასავლები</h2>
+            </div>
+
+            <div class="video-grid">
+                <article class="video-card reveal">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" playsinline>
+                            <source src="https://res.cloudinary.com/imyx3aqh/video/upload/v1790077020/%E1%83%93%E1%83%98%E1%83%9C%E1%83%9D_%E1%83%A1%E1%83%A5%E1%83%90%E1%83%9A%E1%83%9D%E1%83%91%E1%83%A1_%E1%83%90%E1%83%92%E1%83%9B%E1%83%9D%E1%83%94%E1%83%9C%E1%83%90%E1%83%A1_%E1%83%90%E1%83%8F%E1%83%9C%E1%83%9D_1.mp4" type="video/mp4">
+                            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+                        </video>
+                    </div>
+                    <div class="video-card__body">
+                        <h3>დინო სწავლობს აღმოჩენას</h3>
+                    </div>
+                </article>
+
+                <article class="video-card reveal">
+                    <div class="video-wrapper">
+                        <video controls preload="metadata" playsinline>
+                            <source src="https://res.cloudinary.com/imyx3aqh/video/upload/v1790077039/Untitled_design_1.mp4" type="video/mp4">
+                            თქვენი ბრაუზერი არ უჭერს მხარს ვიდეოს.
+                        </video>
+                    </div>
+                    <div class="video-card__body">
+                        <h3>მოგზაურობა დინოზავრების სამყაროში</h3>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-section__content reveal">
+                <p class="eyebrow">ჩვენ შესახებ</p>
+                <h2>სწავლა, რომელიც თავგადასავლად იქცევა</h2>
+                <p>მზის ბიბლიოთეკარი შექმნილია იმისთვის, რომ ძველი სამყაროს სიდიადე, ცხოველთა მრავალფეროვნება და აღმოჩენის გემო მიმზიდველი, გამოცდილებით გაჯერებული ფორმით წარუდგინოს. აქ ცოდნა არ არის მხოლოდ ინფორმაცია — ეს არის პატარა მოგზაურობა დროის, ბუნებისა და აღმოჩენისკენ.</p>
+                <p>ავტორი — მზევინარ მჟავია-ხომერიკი</p>
+            </div>
+            <div class="about-section__panel reveal" aria-label="საგანმანათლებლო მუზეუმის დიზაინი">
+                <div class="mini-card mini-card--one">
+                    <span>მეცნიერება</span>
+                </div>
+                <div class="mini-card mini-card--two">
+                    <span>აღმოჩენა</span>
+                </div>
+                <div class="mini-card mini-card--three">
+                    <span>მოგზაურობა</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section reveal" aria-labelledby="cta-title">
+            <p class="eyebrow">მზად ხარ ახალი აღმოჩენისთვის?</p>
+            <h2 id="cta-title">გახსენი დინოზავრების სამყარო და დაიწყე მოგზაურობა მილიონობით წლით უკან.</h2>
+            <a class="button button--primary" href="#home">დაიწყე მოგზაურობა</a>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer__brand">მზის ბიბლიოთეკარი</div>
+        <div class="site-footer__author">მზევინარ მჟავია-ხომერიკი</div>
+        <p>&copy; 2026 მზის ბიბლიოთეკარი. ყველა უფლება დაცულია.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
